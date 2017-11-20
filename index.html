@@ -1,0 +1,88 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pocket Radio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Classy Subscribe Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //Custom Theme files --> 
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> 
+<link href="//fonts.googleapis.com/css?family=Suranna" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-agileits">
+<!-- 		<h1>Portable Pocket Radio</h1>  -->
+		<div class="mainw3-agileinfo form"> 
+			<div class="login-w3top">  
+			</div>
+			<div class="agileits-subscribe">  
+				<div class="subscribe-w3lsbottom"> 
+			<!-- 		<h6>Verify</h6> -->
+					<h2>Pocket Radio</h2>
+					<p>The radio with full AM/FM tuning of 530 – 1710 KHz (AM) and 87 – 108 MHz (FM) is the same size as a credit card and weighs a fraction of what other survival radios weigh. </p>
+							<h6>Verify</h6>
+					<p style="display:inline">Are you human? 6 + 4 =</p> <input type="text" id="human">
+					<form action="javascript:proceed()"> 
+						<input type="email" name="email" placeholder="Enter your Email..." required="" id="addr">
+						<input type="submit" onclick="proceed()" value="Continue To Offer"> 
+					</form>
+				</div>	
+				<p style="font-size:12px">*We value your privacy your E-Mail will not be shared.</p>
+			</div>	 
+		</div>	
+	</div>	
+	<!-- //main -->
+	<!-- copyright -->
+	<div class="w3copyright-agile">
+		<p style="color:#222">© 2017 Classy Subscribe Form. All rights reserved | Design by <a style="color:#555" href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+	</div>
+	<!-- //copyright -->  
+
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDWQfuUgzUMYL__Scovj9zbZCAN4EgNptQ",
+	    authDomain: "landing-central.firebaseapp.com",
+	    databaseURL: "https://landing-central.firebaseio.com",
+	    projectId: "landing-central",
+	    storageBucket: "",
+	    messagingSenderId: "345606747665"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script>
+
+		function proceed() {
+
+		     if (document.getElementById("addr").value.indexOf("@") > -1) {
+		     	firebase.database().ref('campaigns/survivalfrog/' + document.getElementById("addr").value.replace(".", "_")).set({
+		     		trackingid: "pocketradio",
+		    		email: document.getElementById("addr").value
+		  		}).then(function() {
+		    		window.location.href='http://tapsmart.srvvlfrog.hop.clickbank.net/?p=kr&tid=pocketradiocl'
+		  		});
+		     	//document.getElementById("addr").value = "";
+
+		     }
+		     else {
+		     	// document.getElementById("addr").reportValidity();
+		     	window.location.href='http://tapsmart.srvvlfrog.hop.clickbank.net/?p=kr&tid=pocketradiocl'
+		     }
+		}
+	</script>
+</body>
+</html>
